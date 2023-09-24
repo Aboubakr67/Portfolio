@@ -1,0 +1,6 @@
+# DocumentRoot C:\dev-project\portfolio\public
+# <Directory C:\dev-project\portfolio\public>
+#     AllowOverride All
+#     Order Allow,Deny
+#     Allow from All
+# </Directory>

@@ -1,0 +1,285 @@
+/* ! Section Skills */
+
+.skills-left,
+.skills-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid #f0f0f0; */
+    border: 6px solid #ffbd39;
+    /* Ajoutez une bordure de 2px solide de couleur grise */
+    padding: 20px;
+    /* Ajoutez un espace intérieur pour espacer les compétences de la bordure */
+    border-radius: 10px;
+    /* Ajoutez une légère arrondi à la bordure */
+    background: white;
+}
+
+
+.skill-images {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* 4 images par ligne */
+    gap: 20px;
+    /* Espacement entre les images */
+}
+
+
+.skill-images img {
+    max-width: 100%;
+    /* Les images ne dépasseront pas la largeur du conteneur */
+    height: auto;
+    /* Hauteur automatique pour conserver les proportions */
+    max-height: 100px;
+    /* Hauteur maximale souhaitée */
+}
+
+@media (max-width: 767px) {
+
+    .skills-left,
+    .skills-right {
+        margin: 20px;
+    }
+}
+
+
+
+/* ! Section Project  */
+
+
+.project {
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+}
+
+
+.project img {
+    max-width: 100%;
+    /* Définit une largeur maximale de 100% */
+    height: auto;
+    /* Ajuste automatiquement la hauteur en proportion de la largeur */
+}
+
+.project:hover {
+    opacity: 0.7;
+}
+
+/* Ajout de styles pour la grille */
+.project-details-grid {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* Deux colonnes égales pour la description et l'image */
+    /* grid-column-gap: 20px; */
+    /* Espacement horizontal entre les colonnes */
+    /* align-items: center; */
+    /* Centre le contenu verticalement */
+}
+
+.project-description {
+    /* Vos styles existants pour la description */
+    font-size: 18px;
+    margin-top: 15px;
+    /* Espacement entre le titre et la description */
+}
+
+.project-image {
+    /* Vos styles existants pour l'image */
+    text-align: center;
+    /* Centre l'image horizontalement */
+}
+
+/* Augmenter la taille de l'image */
+.project-image img {
+    width: 100%;
+    height: auto;
+    /* Ajuste automatiquement la hauteur en proportion de la largeur */
+}
+
+
+
+/* Style pour le modal */
+.modal {
+    display: none;
+    overflow-y: auto;
+    /* Ajoutez une barre de défilement verticale si nécessaire */
+    scrollbar-width: thin;
+    /* Pour Firefox */
+}
+
+.modal::-webkit-scrollbar {
+    width: 6px;
+    /* Largeur de la barre de défilement */
+}
+
+.modal::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Couleur de fond de la piste de la barre de défilement */
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Couleur de la poignée de la barre de défilement */
+}
+
+.modal-dialog {
+    max-width: 90%;
+    /* Réduisez la largeur du modal à 90% de la largeur de l'écran */
+    margin: 0 auto;
+    /* Centrez le modal horizontalement */
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* Centrez le titre */
+}
+
+/* Styles pour le bouton Close en bas */
+.modal-header {
+    border-bottom: none;
+    /* Supprime la bordure en bas du header */
+    justify-content: center;
+    /* Centrez horizontalement le contenu du header */
+    align-items: center;
+    /* Centrez verticalement le contenu du header */
+    display: flex;
+    /* Utilisez un modèle de boîte flexible pour le centrage */
+}
+
+.modal-footer {
+    border-top: none;
+    /* Supprimez la bordure en haut du footer */
+    justify-content: center;
+    /* Centrez horizontalement le contenu du footer */
+    align-items: center;
+    /* Centrez verticalement le contenu du footer */
+    display: flex;
+    /* Utilisez un modèle de boîte flexible pour le centrage */
+}
+
+#projectDescription {
+    font-size: 18px;
+    text-align: center;
+}
+
+#projectImages img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#projectStack {
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+    /* Déplace la pile de technologies sous la grille */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: #000;
+}
+
+/* CSS personnalisé pour le bouton "Close" */
+.btn-custom {
+    background-color: white;
+    /* Couleur de fond blanche */
+    color: black;
+    /* Couleur du texte noir */
+    border: 1px solid black;
+    /* Bordure noire de 1 pixel */
+}
+
+/* Styles au survol du bouton (si nécessaire) */
+.btn-custom:hover {
+    background-color: lightgray;
+    /* Couleur de fond au survol */
+}
+
+/* ! Section contact */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    /* Ajoutez un espacement horizontal entre les éléments */
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+
+
+/* ! Section footer */
+
+/* Ajoutez d'autres styles CSS ici si nécessaire */
+
+/* Styles pour le pied de page (footer) */
+.ftco-footer {
+    padding: 90px 100px;
+}
+
+.ftco-footer p {
+    margin-bottom: 0;
+    /* Supprime la marge en bas du paragraphe */
+    font-size: 16px;
+    /* Taille de police du texte */
+    color: white;
+}
+
+.ftco-footer p a {
+    color: white;
+}
+
+/* Styles pour les liens d'icônes */
+.icon-linkedin,
+.icon-github,
+.icon-email {
+    font-size: 24px;
+    /* Taille de police des icônes */
+    margin-right: 10px;
+    /* Espace à droite des icônes */
+    color: #333;
+    /* Couleur de l'icône par défaut */
+    text-decoration: none;
+    /* Supprime la soulignement des liens */
+    transition: color 0.3s;
+    /* Animation de changement de couleur au survol */
+}
+
+/* Animation de changement de couleur des icônes au survol */
+.icon-linkedin:hover,
+.icon-github:hover,
+.icon-email:hover {
+    color: #0077B5;
+    /* Couleur de l'icône au survol (LinkedIn) */
+}
+
+.icon-github:hover {
+    color: #000;
+    /* Couleur de l'icône au survol (GitHub) */
+}
+
+.icon-email:hover {
+    color: #D44638;
+    /* Couleur de l'icône au survol (E-mail) */
+}
