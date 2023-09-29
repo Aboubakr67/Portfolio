@@ -36,4 +36,22 @@ class HomeController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+
+    #[Route('/mentions-legales', name: 'mentions-legales')]
+    public function mention_legal(Request $request, EntityManagerInterface $entityManager)
+    {
+
+        return $this->render(
+            'mentions-legales.html.twig',
+        );
+    }
+
+    #[Route('/politique-de-confidentialite', name: 'politique-de-confidentialite')]
+    public function politique_de_confidentialite(Request $request, EntityManagerInterface $entityManager)
+    {
+
+        return $this->render(
+            'politique-de-confidentialite.html.twig',
+        );
+    }
 }

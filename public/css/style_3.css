@@ -177,6 +177,7 @@
     margin-top: 15px;
     text-align: center;
     /* Déplace la pile de technologies sous la grille */
+    color: black;
 }
 
 .close {
@@ -282,4 +283,19 @@
 .icon-email:hover {
     color: #D44638;
     /* Couleur de l'icône au survol (E-mail) */
+}
+
+
+/* ! Mention légales */
+
+.custom-margin-top {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+/* Appliquez la couleur blanche au texte des éléments p, strong et h2 */
+p,
+strong,
+h2 {
+    color: white;
 }

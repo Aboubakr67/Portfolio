@@ -97,7 +97,7 @@
 							<!--<p class="display-6 color-d">Hello, world!</p>-->
 							<h1 class="hero-title mb-4">I am ZENNIR Aboubakr</h1>
 							<p class="hero-subtitle">
-								<span class="typed" data-typed-items="Développeur Web, Étudiant au CCI Campus, Recherche une alternance"></span>
+								<span class="typed" data-typed-items="Développeur Web, Étudiant à l'iSCOD, Recherche une alternance"></span>
 							</p>
 							<!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
 						</div>
@@ -158,7 +158,7 @@
 										<span>Projets terminés</span>
 									</p>
 									<p>
-										<a href="{{ asset('pdf/CV_ZENNIR_Aboubakr.pdf') }}" class="btn btn-primary py-3 px-3" target="_blank">TÉLÉCHARGER CV</a>
+										<a href="{{ asset('pdf/CV_iSCOD_ZENNIR Aboubakr.pdf') }}" class="btn btn-primary py-3 px-3" target="_blank">TÉLÉCHARGER CV</a>
 									</p>
 								</div>
 							</div>
@@ -224,7 +224,7 @@
 					<div class="row justify-content-center mt-5">
 						<div class="col-md-6 text-center ftco-animate">
 							<p>
-								<a href="{{ asset('pdf/CV_ZENNIR_Aboubakr.pdf') }}" class="btn btn-primary py-3 px-3" target="_blank">TÉLÉCHARGER CV</a>
+								<a href="{{ asset('pdf/CV_iSCOD_ZENNIR Aboubakr.pdf') }}" class="btn btn-primary py-3 px-3" target="_blank">TÉLÉCHARGER CV</a>
 							</p>
 						</div>
 					</div>
@@ -542,12 +542,14 @@
 								© Copyright 2023 | Aboubakr ZENNIR | Tous droits réservés
 								<br>
 								<a href="https://www.linkedin.com/in/aboubakr-zennir-25b4b919a/" class="icon-linkedin"></a>
-								<a href="#" class="icon-github"></a>
+								<a href="https://github.com/Aboubakr67?tab=repositories" class="icon-github"></a>
 								<a href="mailto:aboubakr.zennir@gmail.com" class="icon-email">
 									<i class="bi bi-envelope-open-fill"></i>
 								</a>
 								<br>
-								<a href="#">Mentions légales</a>
+								<a href="{{ path('mentions-legales') }}">Mentions légales</a>
+								<span>|</span>
+								<a href="{{ path('politique-de-confidentialite') }}">Politique de confidentialité</a>
 							</p>
 						</div>
 					</div>
@@ -568,6 +570,9 @@
 			<script src="{{ asset('js/aos.js') }}"></script>
 			<script src="{{ asset('js/jquery.animateNumber.min.js') }}"></script>
 			<script src="{{ asset('js/scrollax.min.js') }}"></script>
+
+			{# Emailjs #}
+			<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 			<script src="{{ asset('js/main.js') }}"></script>
 
