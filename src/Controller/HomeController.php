@@ -32,7 +32,7 @@ class HomeController extends AbstractController
             $this->addFlash('success', 'Le formulaire a été soumis avec succès.');
 
             // Redirigez vers une autre page, par exemple, la page d'accueil
-            return $this->redirectToRoute('home');
+            return $this->redirect($request->server->get('HTTP_REFERER'));
         }
 
         return $this->render('base.html.twig', [
