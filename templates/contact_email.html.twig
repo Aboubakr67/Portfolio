@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{{ subject }}</title>
+		<style>
+			/* Ajoutez votre CSS personnalisé ici */
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f0f0f0;
+			}
+			.container {
+				max-width: 600px;
+				margin: 0 auto;
+				padding: 20px;
+				background-color: #ffffff;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+			h1 {
+				color: #333;
+			}
+			p {
+				color: #555;
+			}
+			/* Ajoutez votre style de pied de page ici */
+			.footer {
+				background-color: black;
+				padding: 10px;
+				text-align: center;
+			}
+			.footer p {
+				color: white;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div
+			class="container">
+			<!-- Contenu principal -->
+			<h3>{{ subject }}</h3>
+			<h6>Contact :
+				{{ name }}</h6>
+			<p>De :
+				{{ email }}</p>
+			<p>Message :</p>
+			<p>{{ message }}</p>
+
+			<!-- Pied de page -->
+			<div class="footer">
+				<p>Email : aboubakr.zennir@gmail.com</p>
+				<p>Tel : 07 82 03 71 27</p>
+			</div>
+		</div>
+	</body>
+</html>

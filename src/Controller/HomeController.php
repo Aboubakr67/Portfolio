@@ -57,4 +57,13 @@ class HomeController extends AbstractController
             'politique-de-confidentialite.html.twig',
         );
     }
+
+    #[Route('/contact', name: 'contact')]
+    public function contact(Request $request, EntityManagerInterface $entityManager)
+    {
+
+        return $this->render(
+            'contact_email.html.twig',
+        );
+    }
 }
